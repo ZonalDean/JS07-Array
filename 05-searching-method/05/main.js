@@ -8,8 +8,13 @@ const inventory = [
 
 // console.log(findCherries)
 
-let findCherries = item => {
-    return item.name === 'cherries';
-}
+// let findCherries = item => {
+//     return item.name === 'cherries';
+// }
+
+// ^ orginal
+// new
+
+const result = inventory.find(el => el.name = 'cherries')
 
 console.log(inventory.find(findCherries))
