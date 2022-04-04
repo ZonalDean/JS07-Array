@@ -5,7 +5,7 @@ let findNegative = n => {
     return n < 0;
 }
 
-console.log(nums.find(findNegative))
+console.log(nums.find(n => n < 0))
 
 // let findNegative = (arr) => {
 //     let result = []

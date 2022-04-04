@@ -1,6 +1,6 @@
 let styles = ['Jazz', 'Blues'];
 
-styles[2] = 'Rock-n-Roll';
+styles[styles.length] = 'Rock-n-Roll';
 
 styles[1] = 'Classic';
 

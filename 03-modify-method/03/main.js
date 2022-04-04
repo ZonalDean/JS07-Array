@@ -1,10 +1,9 @@
 const zoo = ['Dog', 'Cat', 'Rat'];
 
 zoo.push('Fish')
-zoo.push('Horse')
+zoo.unshift('Horse')
 zoo.push('Giraffe', 'Snake')
-console.log(zoo);
-zoo.splice(4 , 1)
+zoo.shift()
 zoo.pop()
-zoo.splice(0 , 1)
+zoo.shift()
 console.log(zoo)

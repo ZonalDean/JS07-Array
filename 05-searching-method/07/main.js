@@ -17,7 +17,7 @@ const tasks = [
 
 let updateTask = (id,newName) => {
     const idx = tasks.findIndex(task => task.id === id); //looks for indext of array tasks, parameter is called task to specify singular
-    if (idx !== -1) { // makes sure the inx is valid
+    if (idx !== -1) { // makes sure the idx is valid
         tasks[idx].name = newName; // changes the value of that index
     } else {
         alert('class with this id is not found') // alerts if bugged

@@ -15,6 +15,7 @@ const inventory = [
 // ^ orginal
 // new
 
-const result = inventory.find(el => el.name = 'cherries')
+const result = inventory.find(el => el.name === 'cherries')
 
-console.log(inventory.find(findCherries))
+// console.log(inventory.find(findCherries))
+console.log(result)

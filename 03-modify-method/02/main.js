@@ -4,4 +4,4 @@ arr.push(function() {
   alert(this);
 })
 
-arr[2](); // * prints the function
+arr[2](); // * alerts the array because 'this' refers to the array
