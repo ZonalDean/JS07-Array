@@ -138,17 +138,30 @@
 // // ]
 
 // array.map((n,i) => {
-//     array[i] =
+//     let inputAge = 2021 - +n.birth.slice(0, 4);
+//     n.age = inputAge
 // })
 // console.log(array)
 
-// onst array = [
-//   { name: 'apple', birth: '2000-01-01' },
-//   { name: 'banana', birth: '1990-10-10' },
-//   { name: 'watermelon', birth: '1985-12-30' }
-// ];
-// // result: [
-// //     "<tr><td>apple</td><td>01 jan 2000</td></tr>",
-// //     "<tr><td>banana</td><td>10 oct 1990</td></tr>",
-// //     "<tr><td>watermelon</td><td>30 dec 1985</td></tr>",
-// // ]
+const array = [
+  { name: 'apple', birth: '2000-01-01' },
+  { name: 'banana', birth: '1990-10-10' },
+  { name: 'watermelon', birth: '1985-12-30' }
+];
+// result: [
+//     "<tr><td>apple</td><td>01 jan 2000</td></tr>",
+//     "<tr><td>banana</td><td>10 oct 1990</td></tr>",
+//     "<tr><td>watermelon</td><td>30 dec 1985</td></tr>",
+// ]
+
+array.map((n,i) => {
+    let birthSplit = n.birth.split('-')
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    birthSplit[1] = months[1*(birthSplit[1]) - 1]
+    // console.log(birthSplit)
+    birthSplit = [birthSplit[2], birthSplit[1], birthSplit[0]];
+    birthSplit = birthSplit.join(' ');
+    array[i] = `<tr><td>${n.name}<td/><td>${birthSplit}</td></tr>`
+})
+
+console.log(array)

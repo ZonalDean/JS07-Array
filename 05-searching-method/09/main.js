@@ -28,16 +28,18 @@
 
 // const result = array.filter(n => n % 3 === 0)
 
-// const array = ['Elephant', 'Ant', 'Cat', 'Eagle', 'Zebra'];
+// const array = ['nephant', 'Ant', 'Cat', 'Eagle', 'Zebra'];
 // // ค่าที่ขึ้นต้นด้วยตัว E
 
-// const result = array.filter(n => )
+// console.log(array.filter(n => n[0] === 'E'));
 
 // const array = ['APPLE', 'oRanGE', 'PEACH', 'PaPAYA'];
 // // ค่าที่เป็นตัวพิมพ์ใหญ่ทั้งหมด
+// console.log(array.filter(n => n.toUpperCase() === n));
 
 // const array = ['Krabi', 'Chonburi', 'Buriram', 'Saraburi','Phrae'];
 // // ค่าที่มีคำว่า buri เป็นส่วนประกอบโดยไม่สนใจตัวพิมพ์เล็กหรือตัวพิมพ์ใหญ่
+// console.log(array.filter(n => n.toLowerCase().includes('buri')));
 
 // const array = [
 //   { name: 'Ben', age: 14 },
@@ -47,7 +49,7 @@
 //   { name: 'Paul', age: 24 }
 // ];
 // // อายุไม่น้อยกว่า 18 
-
+// console.log(array.filter(n => n.age >= 18));
 
 // const array = [
 //   { id: 1, name: 'Pepsi' },
@@ -57,6 +59,7 @@
 //   { id: 5, name: 'Sprite' }
 // ];
 // // id ไม่เท่ากับ 4
+// console.log(array.filter(n => n.id !== 4));
 
 // const array = [
 //   { name: 'John', birth: '2001-07-31' },
@@ -66,3 +69,4 @@
 //   { name: 'Joe', birth: '2002-06-13' }
 // ];
 // // เกิดเดือน 6
+// console.log(array.filter(n => (n.birth).slice(5, 7) === '06'));
